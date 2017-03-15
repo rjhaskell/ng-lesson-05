@@ -3,12 +3,11 @@
 <form ng-submit="vm.logUserIn()">
     <div class="form-group">
         <label for="username">Username</label>
-        <input type="text" id="username" ng-model="vm.username" class="form-control" placeholder="Username">
+        <input type="text" id="username" ng-model="vm.user.username" class="form-control" placeholder="Username">
     </div>
     <div class="form-group">
         <label for="password">Password</label>
-        <input type="password" id="password" ng-model="vm.password"
-        class="form-control" placeholder="Password">
+        <input type="password" id="password" ng-model="vm.user.password" class="form-control" placeholder="Password">
     </div>
     <button class="btn btn-default" type="submit">
         Login
