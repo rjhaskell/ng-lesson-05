@@ -13,4 +13,6 @@ namespace Lesson04 {
     ]);
 
     module.config(Configuration);
+
+    module.run(Run);
 }

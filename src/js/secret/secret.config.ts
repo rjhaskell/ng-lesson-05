@@ -7,11 +7,14 @@ namespace Lesson04.Secret {
         $stateProvider: ng.ui.IStateProvider
     ) {
         $stateProvider
-            .state('Secret', <ng.ui.IState>{
+            .state('Secret', <Models.IAuthenticatedState>{
                 url: '/secret',
                 templateUrl: 'js/secret/secret.view.html',
                 controller: 'SecretController',
-                controllerAs: 'vm'
+                controllerAs: 'vm',
+                data: {
+                    requiresAuthentication: true
+                }
             });
     }
 }
