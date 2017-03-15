@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <base href="/">
+    <title>Template Hello</title>
+    <!-- Third Party Styles -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/angular/angular-csp.css">
+
+    <!-- Application Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" ui-sref="Home">Lesson 04</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li ui-sref-active="active"><a ui-sref="Home">Home</a></li>
+                    <li ui-sref-active="active"><a ui-sref="Games">Games</a></li>
+                    <li ui-sref-active="active"><a ui-sref="About">About</a></li>
+                    <li ui-sref-active="active"><a ui-sref="Secret">Secret</a></li>
+                    <li ui-sref-active="active"><a ui-sref="Login">Login</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container">
+        <ui-view></ui-view>
+    </div>
+    <!-- /.container -->
+
+    <!-- Third Party Scripts -->
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <!-- Application Scripts -->
+    <script src="js/games/game.model.js"></script>
+
+    <script src="js/services/game.service.js"></script>
+    <script src="js/services/services.js"></script>
+
+    <script src="js/login/login.controller.js"></script>
+    <script src="js/login/login.config.js"></script>
+    <script src="js/login/login.js"></script>
+
+    <script src="js/secret/secret.controller.js"></script>
+    <script src="js/secret/secret.config.js"></script>
+    <script src="js/secret/secret.js"></script>
+
+    <script src="js/games/detail.controller.js"></script>
+    <script src="js/games/games.controller.js"></script>
+    <script src="js/games/games.config.js"></script>
+    <script src="js/games/games.js"></script>
+
+    <script src="js/about/about.controller.js"></script>
+    <script src="js/about/about.config.js"></script>
+    <script src="js/about/about.js"></script>
+
+    <script src="js/home/home.controller.js"></script>
+    <script src="js/home/home.config.js"></script>
+    <script src="js/home/home.js"></script>
+
+    <script src="js/app.config.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
