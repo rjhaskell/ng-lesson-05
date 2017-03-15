@@ -1,5 +1,5 @@
-namespace Lesson04.Login {
-    let module: ng.IModule = angular.module('app.login', []);
+namespace Lesson04.Views.Login {
+    let module: ng.IModule = angular.module('view.login', []);
 
     module.config(Login.Configuration);
 

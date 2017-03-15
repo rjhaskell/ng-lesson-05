@@ -1,5 +1,5 @@
-namespace Lesson04.Games {
-    let module: ng.IModule = angular.module('app.games', []);
+namespace Lesson04.Views.Games {
+    let module: ng.IModule = angular.module('view.games', []);
 
     module.config(Games.Configuration);
 

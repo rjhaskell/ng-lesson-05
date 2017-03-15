@@ -1,4 +1,4 @@
-namespace Lesson04.Games {
+namespace Lesson04.Views.Games {
     Configuration.$inject = [
         '$stateProvider'
     ];
@@ -9,13 +9,13 @@ namespace Lesson04.Games {
         $stateProvider
             .state('Games', <ng.ui.IState>{
                 url: '/games',
-                templateUrl: 'js/games/games.view.html',
+                templateUrl: 'js/views/games/games.view.html',
                 controller: 'GamesController',
                 controllerAs: 'vm'
             })
             .state('GameDetail', <ng.ui.IState>{
                 url: '/games/:id',
-                templateUrl: 'js/games/detail.view.html',
+                templateUrl: 'js/views/games/detail.view.html',
                 controller: 'GameDetailController',
                 controllerAs: 'vm'
             });

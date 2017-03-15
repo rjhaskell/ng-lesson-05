@@ -1,4 +1,4 @@
-namespace Lesson04.Secret {
+namespace Lesson04.Views.Secret {
     Configuration.$inject = [
         '$stateProvider'
     ];
@@ -9,7 +9,7 @@ namespace Lesson04.Secret {
         $stateProvider
             .state('Secret', <Models.IAuthenticatedState>{
                 url: '/secret',
-                templateUrl: 'js/secret/secret.view.html',
+                templateUrl: 'js/views/secret/secret.view.html',
                 controller: 'SecretController',
                 controllerAs: 'vm',
                 data: {

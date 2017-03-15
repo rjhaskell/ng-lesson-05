@@ -1,6 +1,6 @@
-namespace Lesson04.Games {
+namespace Lesson04.Views.Games {
     export class DetailController {
-        public game: Games.Game;
+        public game: Models.Game;
 
         static $inject = [
             '$stateParams',

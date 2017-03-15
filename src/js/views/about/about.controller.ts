@@ -1,4 +1,4 @@
-namespace Lesson04.About {
+namespace Lesson04.Views.About {
     export class AboutController {
         public name: string = 'Bryan Wood';
         public phone: string = '(555) 555-4242';

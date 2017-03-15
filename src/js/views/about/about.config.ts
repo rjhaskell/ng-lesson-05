@@ -1,4 +1,4 @@
-namespace Lesson04.Login {
+namespace Lesson04.Views.About {
     Configuration.$inject = [
         '$stateProvider'
     ];
@@ -7,10 +7,10 @@ namespace Lesson04.Login {
         $stateProvider: ng.ui.IStateProvider
     ) {
         $stateProvider
-            .state('Login', <ng.ui.IState>{
-                url: '/login',
-                templateUrl: 'js/login/login.view.html',
-                controller: 'LoginController',
+            .state('About', <ng.ui.IState>{
+                url: '/about',
+                templateUrl: 'js/views/about/about.view.html',
+                controller: 'AboutController',
                 controllerAs: 'vm'
             });
     }

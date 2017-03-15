@@ -1,5 +1,5 @@
-namespace Lesson04.About {
-    let module: ng.IModule = angular.module('app.about', []);
+namespace Lesson04.Views.About {
+    let module: ng.IModule = angular.module('view.about', []);
 
     module.config(About.Configuration);
 

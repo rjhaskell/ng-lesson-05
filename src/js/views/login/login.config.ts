@@ -1,16 +1,16 @@
-namespace Lesson04.Home {
+namespace Lesson04.Views.Login {
     Configuration.$inject = [
         '$stateProvider'
     ];
-    
+
     export function Configuration(
         $stateProvider: ng.ui.IStateProvider
     ) {
         $stateProvider
-            .state('Home', <ng.ui.IState>{
-                url: '/',
-                templateUrl: 'js/home/home.view.html',
-                controller: 'HomeController',
+            .state('Login', <ng.ui.IState>{
+                url: '/login',
+                templateUrl: 'js/views/login/login.view.html',
+                controller: 'LoginController',
                 controllerAs: 'vm'
             });
     }

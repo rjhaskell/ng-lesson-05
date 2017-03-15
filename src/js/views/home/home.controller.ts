@@ -1,4 +1,4 @@
-namespace Lesson04.Home {
+namespace Lesson04.Views.Home {
     export class HomeController {
         public greeting: string = "Hello World!";
 

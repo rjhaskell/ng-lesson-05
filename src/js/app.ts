@@ -4,11 +4,7 @@ namespace Lesson04 {
         'ui.router',
 
         /*-- Application Modules --*/
-        'app.home',
-        'app.games',
-        'app.about',
-        'app.login',
-        'app.secret',
+        'app.views',
         'app.services'
     ]);
 

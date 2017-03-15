@@ -1,4 +1,4 @@
-namespace Lesson04.Login {
+namespace Lesson04.Views.Login {
     export class LoginController {
         public user: Models.UserLogin;
 
