@@ -1,9 +1,4 @@
 <h1>Game List</h1>
-<form>
-    <div class="pull-right form-group">
-        <input type="text" class="form-control" ng-model="vm.filterData">
-    </div>
-</form>
 <table class="table table-striped">
     <tbody>
         <tr ng-repeat="game in vm.gameList | filter: { publisher: vm.filterData }">
@@ -26,5 +21,16 @@
             <th>Publisher</th>
             <th></th>
         </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>
+                <div class="input-group input-group-sm">
+                    <span class="input-group-addon glyphicon glyphicon-filter" title="filter by publisher"></span>
+                    <input type="text" class="form-control" ng-model-options="{ debounce: 100 }" ng-model="vm.filterData">
+                </div>
+            </th>
+            <th></th>
     </thead>
 </table>
