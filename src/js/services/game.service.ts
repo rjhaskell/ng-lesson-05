@@ -1,11 +1,11 @@
 namespace Lesson04.Services {
     export class GameService {
-        private gameList: Games.Game[];
+        private gameList: Models.Game[];
 
         /**
          * Returns a list of games which are stored in memory
          */
-        public get games(): Games.Game[] {
+        public get games(): Models.Game[] {
             return this.gameList;
         }
 
@@ -13,7 +13,7 @@ namespace Lesson04.Services {
          * Returns a game that is requested by its index
          * @param index The index of the game to return
          */
-        public gameByIndex(index: number): Games.Game {
+        public gameByIndex(index: number): Models.Game {
             return this.gameList[index];
         }
 
@@ -24,7 +24,7 @@ namespace Lesson04.Services {
         constructor(
             $http: ng.IHttpService
         ) {
-            $http.get<Games.Game[]>('data/games.json')
+            $http.get<Models.Game[]>('data/games.json')
                 .then((response) => {
                     this.gameList = response.data;
                 })
