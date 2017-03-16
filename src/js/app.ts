@@ -1,6 +1,7 @@
 namespace Lesson04 {
     let module: ng.IModule = angular.module('app', [
         /*-- Third Party Modules --*/
+        'ngResource',
         'ui.router',
 
         /*-- Application Modules --*/
